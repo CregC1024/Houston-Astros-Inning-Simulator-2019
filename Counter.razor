@@ -1,0 +1,86 @@
+@page "/counter"
+
+
+<h1>Houston Astros Inning Simulator 2019</h1>
+
+<div id="container">
+    <div>
+        <p>Men 1st Base: @currentCount</p>
+
+        <button class="btn btn-primary" @onclick="@IncrementCount">Click me</button>
+        <div />
+
+        @code {
+            int currentCount = 0;
+
+            void IncrementCount()
+            {
+                currentCount++;
+            }
+
+        }
+    </div>
+    <br />
+
+    <!---------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+
+    @page "/counter1"
+    <div>
+        <p>Men 2nd Base: @currentCount1</p>
+
+        <button class="btn btn-primary" @onclick="@IncrementCount1">Click me</button>
+
+        @code {
+            int currentCount1 = 0;
+
+            void IncrementCount1()
+            {
+                currentCount++;
+            }
+
+        }
+    </div>
+    <br />
+    <!---------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    @page "/counter2"
+    <div>
+        <p>Men 3nd Base: @currentCount2</p>
+
+        <button class="btn btn-primary" @onclick="@IncrementCount2">Click me</button>
+
+        @code {
+            int currentCount2 = 0;
+
+            void IncrementCount2()
+            {
+                currentCount++;
+            }
+
+        }
+    </div>
+</div>
+<br />
+<br/>
+<br/>
+
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th scope="col">1st Base</th>
+            <th scope="col">2nd Base</th>
+            <th scope="col">3rd Base</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            
+        </tr>
+        
+    </tbody>
+</table>
